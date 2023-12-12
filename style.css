@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Hedvig Letters Serif', serif;
+}
+/* navbar style */
+#navbar{
+    background-image: url('https://i.pinimg.com/736x/84/70/94/847094a5d2df67f4fc7a7a6b77bcfe7b.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+.container a{
+    font-weight: 600;
+    font-size: 1.15rem;
+}
+#bg{
+    width: 100%;
+    height: 550px;
+    background-image: url('https://i.pinimg.com/736x/84/70/94/847094a5d2df67f4fc7a7a6b77bcfe7b.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#bg>h1 {
+    color: black;
+    margin-left: 56%;
+    font-size: 50px;
+}
+.bg-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -110px 0px;
+}
+/* card style */
+.cd-head {
+    margin-top: 200px;
+    text-align: center;
+}
+.container {
+    display: flex;
+    margin-top: 2%;
+}
+.flex-items img {
+    padding: 15px;
+}
+.flex-items:hover{
+    box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.5);
+    transform: translateY(-5px);
+}
+
+/* button */
+.btn-content>button {
+    background-color: blue;
+    border: 0;
+    border-radius: 30px;
+    align-items: center;
+    margin-left: 46%;
+    margin-top: 21px;
+    color: white;
+    padding: 5px;
+}
+.btn-content>button:hover{
+    background-color: red;
+}
+/* carousel */
+.carousel {
+    position: relative;
+    margin-top: 20px;
+    padding: 20px;
+}
+.carousel-item{
+    height: 600px;
+}
+.carousel-caption>h5{
+    font-weight: 600;
+    color: black;
+    background-color: bisque;
+    border-color:white ;
+}
+.carousel-caption>button{
+    border: 0;
+    background-color: rgb(96, 233, 238);
+    border-radius: 5px;
+    padding: 5px;
+}
+/* video */
+.embed-responsive-item{
+    margin-left: 5px;
+}
+.clg-video-content>img{
+    width: 100%;
+    height:315px;
+    margin-left: 65px;
+}
+.heading>h2{
+    text-align: center;
+    margin-top: 20px;
+}
+.image-content>img{
+    height: 185px;
+    padding: 10px;
+    display: block;
+}
+/* next section */
+/* .image-content {
+    margin-right: 10px;
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    opacity: 1;
+} */
+
+.image-content {
+    position: relative;
+    display: inline-block;
+}
+
+#varanasi-content:hover::after {
+    content: "VARANASI Rs:12,000/person BOOK NOW";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+#kashmir-content:hover::after{
+    content: "KASHMIR Rs:20,000/person BOOK NOW";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+#punjab-content:hover::after{
+    content: "PUNJAB Rs:14,000/person BOOK NOW";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+#rajastan-content:hover::after{
+    content: "RAJASTAN Rs:18,000/person BOOK NOW";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+
+/* north tour */
+.feature-img {
+    margin-right: 10px;
+    border-radius: 50px;
+}
+.feature-img>img{
+    padding: 10px;
+    border-radius: 100%;
+}
+.img-info {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    z-index: 3;
+    transition: all ease-in-out 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section-head i {
+    margin-left: 48%;
+    font-size: 45px;
+    margin-top: 18px;
+    color: orange;
+}
+.section-head h2 {
+    text-align: center;
+    color: blueviolet;
+    font-family: cursive;
+}
+
+
+/* next section styling (customers) */
+.cd-info img {
+    height: 188px;
+}
+.cd-info {
+    margin-right: 72px;
+    margin-left: 12px;
+    border: none;
+}
+.stars i {
+    color: green;
+    margin-bottom: 14px;
+}
+.cd-btn{
+    text-decoration: none;
+    list-style: none;
+    color: purple;
+}
+
+/* footer */
+.content-img>img{
+    width: 100%;
+    height: 100%;
+}
+.ft-head {
+    margin-left: 0px;
+    padding: 40px 130px;
+}
+.ft-head h4 {
+    color: orange;
+}
+#footer-content {
+    background-color: lightsteelblue;
+}
+.social-links {
+    font-size: 25px;
+}
+.social-media{
+    margin-left: 10px;
+    color: black;
+}
+.social-media:hover{
+    color: darkcyan;
+}
+.content-img>p{
+    text-align: center;
+}
+#footer-content>p{
+    text-align: center;
+}

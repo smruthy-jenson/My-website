@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+    <!-- font family link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Kalnia:wght@200&family=Lora&family=Noto+Sans:wght@200&family=Playfair+Display:ital@0;1&family=Poppins:wght@100&display=swap"
+        rel="stylesheet">
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- fontawesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- css link -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">Travel Guid</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Transport</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Packages
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Hotels</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Support</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- background img -->
+    <div id="bg">
+        <h1>Travel <br> for enough <br> You meet <br> yourself</h1>
+    </div>
+    <!--modal  -->
+    <div class="bg-button">
+        <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalToggleLabel">PLEASE SHARE YOUR DETAILS</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-dark">
+                        Name
+                    </div>
+                    <hr>
+                    <div class="modal-body text-dark">
+                        Email
+                    </div>
+                    <hr>
+                    <div class="modal-body text-dark">
+                        Phone number
+                    </div>
+                    <hr>
+                    <div class="modal-body text-dark">
+                        Your Preference
+                    </div>
+                    <hr>
+                    <div class="modal-body text-dark">
+                        Number of members
+                    </div>
+                    <hr>
+                    <div class="modal-body text-dark">
+                        Messages
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-dark d-grid gap-2 col-4 mx-auto" data-bs-target="#exampleModalToggle2"
+                            data-bs-toggle="modal">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+            tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Hide this modal and show the first with the button below.
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back
+                            to first</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">ENQUIRY</button>
+    </div>
+
+    <!-- CARD -->
+    <h2 class="cd-head">HONEYMOON PACAKAGES</h2>
+    <div class="container">
+        <div class="card flex-items" style="width: 18rem;">
+            <img src="https://www.tourmyindia.com/blog/wp-content/uploads/2021/03/Best-Places-to-Visit-in-Kerala.jpg"
+                class="card-img-top" alt="no img">
+            <div class="card-body">
+                <h5 class="card-title">Kerala Honeymoon Packages</h5>
+                <h6 class="card-title">(04 Nights/05 Days)</h6>
+                <p class="card-text">A honeymoon to Kerala reaffirms your belief in the notion why this incredible place
+                    is called one of the paradises on earth and called God's own country. </p>
+                <a href="#" class="btn btn-primary">BOOK NOW</a>
+            </div>
+        </div>
+        <div class="card flex-items" style="width: 18rem;">
+            <img src="https://www.allianz-assistance.com.sg/blog/5-attractions-in-maldives/_jcr_content/root/parsys/wrapper/wrapper/image.img.82.3360.jpeg/1570006692087/attractions-maldives.jpeg"
+                class="card-img-top" alt="no img">
+            <div class="card-body">
+                <h5 class="card-title">Maldive Honeymoon Packages</h5>
+                <h6 class="card-title">(05 Nights/06 Days)</h6>
+                <p class="card-text">Make the journey to Goa onboard Cordelia Cruises as beautiful as the
+                    destinstion.Premium Cruise with world class amenities.</p>
+                <a href="#" class="btn btn-primary">BOOK NOW</a>
+            </div>
+        </div>
+        <div class="card flex-items" style="width: 18rem;">
+            <img src="https://www.tourmyindia.com/blog//wp-content/uploads/2021/04/Feature-Best-Places-to-Visit-in-Manali.jpg"
+                class="card-img-top" alt="no img">
+            <div class="card-body">
+                <h5 class="card-title">Manali Honeymoon Packages</h5>
+                <h6 class="card-title">(07 Nights/08 Days)</h6>
+                <p class="card-text">A serene destination crowned by the snow clad peaks of the Himalayas lush green
+                    hillside,tall pine trees,pristine lakes and verdant landscapes.</p>
+                <a href="#" class="btn btn-primary">BOOK NOW</a>
+            </div>
+        </div>
+        <div class="card flex-items" style="width: 18rem;">
+            <img src="https://travelogyindia.b-cdn.net/blog/wp-content/uploads/2014/12/Aguada-Fort.jpg"
+                class="card-img-top" alt="no img">
+            <div class="card-body">
+                <h5 class="card-title">Goa Honeymoon Packages</h5>
+                <h6 class="card-title">(04 Nights/05 Days)</h6>
+                <p class="card-text">Make the journey to Goa onboard Cordelia Cruises as beautiful as the
+                    destinstion.Premium Cruise with world class amenities.</p>
+                <a href="#" class="btn btn-primary">BOOK NOW</a>
+            </div>
+        </div>
+    </div>
+    <!-- button -->
+    <div class="button">
+        <a class="btn-content" href="#">
+            <button>More Packages</button>
+        </a>
+    </div>
+
+    <!-- carousel -->
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./images/Vallam_kali-img.jpg" class="d-block w-100" alt="no img">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>KERALA BOAT RACE</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                    <button>More Details</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./images/thrissure-pooram-img.jpeg" class="d-block w-100" alt="no img">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>THRISSURE POORAM</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                    <button>More Details</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./images/Performing_kathakali-img.jpg" class="d-block w-100" alt="no img">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>KATHAKALI</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
+                    <button>More Details</button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- video -->
+    <section class="kerala" id="kerala-tourism">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-sm-12">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/R83BlU5nnbs?si=X0Rw0GifCZjRFKYt"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="clg-video-content">
+                        <img src="https://www.keralatourism.org/responsible-tourism/images/ethnic-cuisine/bg-right.jpg?d=30112019"
+                            alt="no img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- north tour -->
+    <div class="heading">
+        <h2>NORTH INDIAN TOUR</h2>
+    </div>
+    <div class="container">
+        <div class="card image-content" id="varanasi-content" style="width: 18rem;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwOvAomRLDREDrs2aRIe0yerjKz-vxQhdl-Q&usqp=CAU"
+                class="card-img-top" alt="no image">
+            <div class="img-info">
+                <h3>VARANASI</h3>
+                <h5>Rs:12,000/person</h5>
+                <button>BOOK NOW</button>
+            </div>
+        </div>
+        <div class="card image-content"  id="kashmir-content" style="width: 18rem;">
+            <img src="https://www.nativeplanet.com/img/2020/09/jammucover-1601270563.jpg" class="card-img-top"
+                alt="no image">
+            <div class="img-info">
+                <h3>KASHMIR</h3>
+                <h5>Rs:20,000/person</h5>
+                <button>BOOK NOW</button>
+            </div>
+        </div>
+        <div class="card image-content" id="punjab-content" style="width: 18rem;">
+            <img src="https://www.fabhotels.com/blog/wp-content/uploads/2019/04/Amritsar1.jpg" class="card-img-top"
+                alt="no image">
+            <div class="img-info">
+                <h3>PUNJAB</h3>
+                <h5>Rs:14,000/person</h5>
+                <button>BOOK NOW</button>
+            </div>
+        </div>
+        <div class="card image-content" id="rajastan-content" style="width: 18rem;">
+            <img src="https://img.traveltriangle.com/blog/wp-content/uploads/2019/02/Hawa-Mahal_24th-oct-400x266.jpg"
+                class="card-img-top" alt="no image">
+        </div>
+        <div class="img-info">
+            <h3>RAJASTAN</h3>
+            <h5>Rs:18,000/person</h5>
+            <button>BOOK NOW</button>
+        </div>
+    </div>
+    <hr>
+
+    <!-- next section -->
+    <div class="heading">
+        <h2>OUR PREMIUM FEATURES</h2>
+    </div>
+    <div class="container">
+        <div class="card feature-img" style="width: 18rem;">
+            <img src="https://media.istockphoto.com/id/1135282671/vector/vector-illustration-of-happy-kids-riding-bicycles-in-the-park.jpg?s=612x612&w=0&k=20&c=MSxAS6_EbS4Vh2bWg-cq36x6WEUJxhGHQs5UyLQ5S4I="
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">FREE BIKE RIDE</h5>
+                <a href="#" class="cd-btn">Learn More</a>
+            </div>
+        </div>
+        <div class="card feature-img" style="width: 18rem;">
+            <img src="https://img.freepik.com/premium-vector/cartoon-kids-camping-nature_29937-9582.jpg"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">CAMPFIRE</h5>
+                <a href="#" class="cd-btn">Learn More</a>
+            </div>
+        </div>
+        <div class="card feature-img" style="width: 18rem;">
+            <img src="https://us.123rf.com/450wm/freeslab/freeslab2308/freeslab230801427/211494057-businessman-wearing-headset-talking-to-a-caller-in-customer-services-center.jpg?ver=6"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">24*7 SUPPORT</h5>
+                <a href="#" class="cd-btn">Learn More</a>
+            </div>
+        </div>
+        <div class="card feature-img" style="width: 18rem;">
+            <img src="https://cdn-production.checkfront.com/wp-content/uploads/2016/11/Female-Tour-Guide-scaled.jpg"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">TOUR GUIDE</h5>
+                <a href="#" class="cd-btn">Learn More</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- next section -->
+
+    <div class="section-head">
+        <i class="fa-solid fa-envelope-open-text"></i>
+        <h2>Our customers love</h2>
+    </div>
+    <div class="container">
+        <div class="card cd-info" style="width: 18rem;">
+            <img src="https://media.photographycourse.net/wp-content/uploads/2022/04/08162028/featured-image.jpg"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <div class="stars">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <h5 class="card-title">Michael & Jenny</h5>
+                <p>We created lots of wonderful memories and the trip was so nice.</p>
+            </div>
+        </div>
+        <div class="card cd-info" style="width: 18rem;">
+            <img src="https://cc-prod.scene7.com/is/image/CCProdAuthor/Engagement-Photo-Poses_P1_mobile_360x270?$pjpeg$&jpegSize=200&wid=720"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <div class="stars">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <h5 class="card-title">Rohit & Amrutha</h5>
+                <p>A truly satisfying experience,travel guide have a great coordination.</p>
+            </div>
+        </div>
+        <div class="card cd-info" style="width: 18rem;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6AEocCT3wirtW_ttDFr85nvyENb8UbM0oJA&usqp=CAU"
+                class="card-img-top" alt="...">
+            <div class="card-body">
+                <div class="stars">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star-half-stroke"></i>
+                </div>
+                <h5 class="card-title">James & Anna</h5>
+                <p>We created lots of wonderful memories and the trip was so nice.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="row" id="footer-content">
+            <div class="col-4 ft-head">
+                <h4>ABOUT US</h4>
+                <h6>Our Company</h6>
+                <h6>Our Management</h6>
+                <h6>Connections</h6>
+                <h6>Annual Reports</h6>
+                <h6>Our Network</h6>
+            </div>
+            <div class="col-4 ft-head">
+                <h4>SOCIAL MEDIA</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook social-media"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram social-media"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter social-media"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp social-media"></i></a>
+                </div>
+            </div>
+            <div class="col-4 content-img">
+                <img src="./images/footer-img-removebg-preview.png" alt="no img">
+            </div>
+
+            <p>&copy; My Travel Website 2023, All Reserved to &reg; Smruthy Jenson</p>
+        </div>
+    </footer>
+
+</body>
+<!-- script for bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+</script>
+
+</html>
